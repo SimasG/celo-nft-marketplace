@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** Grouped Utilities **/
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  column-gap: 2em;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 1em 0 1em 0;
+  font-size: 16px;
+}
+.navbar a:hover {
+  font-weight: bold;
+}
+
+/* Listing */
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 256px;
+  border-radius: 5%;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.card img {
+  width: 100%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+/* Add some padding inside the card container */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 16px;
+}
+
+/* Home Page */
+.containerHome {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create Page */
+.containerCreate {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  margin: auto;
+  margin-top: auto;
+  border-radius: 1rem;
+  border: 1px solid black;
+  background-color: aliceblue;
+  width: 50%;
+  margin-top: 5%;
+}
+.containerCreate input {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin: 1rem 0 1rem 0;
+}
+.containerCreate button:first-of-type {
+  margin-bottom: 1rem;
+}
+
+/* Details */
+.containerDetails {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details img {
+  width: 512px;
+  border-radius: 2rem;
+}
+
+.details span {
+  margin: 0.25rem;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 1rem;
+}
+
+.details span:first-of-type {
+  margin-top: 1rem;
+}
+
+.options {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.updateListing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.updateListing input {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cccccc;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}

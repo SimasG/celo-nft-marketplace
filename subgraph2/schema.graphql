@@ -1,0 +1,19 @@
+# This file defines the entities, or the types, of data that make up the set of possible data
+# you want to query on the service. If you have ever worked with traditional databases,
+# like MongoDB or MySQL before, you can think of Entities as models or tables in the database,
+# where each piece of data needs to conform to that type.
+
+# ** The whole point of doing this is being able to fetch all active listings
+# ** at any given point, so we can display them on our dApp properly.
+type ListingEntity @entity {
+  id: ID!
+  nftAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  price: BigInt! # uint256
+  seller: Bytes! # address
+  # The exclamation mark (!) resembles a *required* property
+  # Lack of an exclamation mark resembles an optional property
+  # Since the listing will not have a buyer until it is sold,
+  # We mark the buyer as an optional property
+  buyer: Bytes # address
+}
